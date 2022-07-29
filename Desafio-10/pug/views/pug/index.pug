@@ -1,0 +1,18 @@
+extends layout/base.pug
+block content
+  table(class="mt-4 table align-middle")
+    thead
+      tr
+        th(scope="col") Nombre
+        th(scope="col") Precio
+        th(scope="col") Imagen del producto
+    tbody
+      each game in games
+        tr
+          td= game.name
+          td= game.price
+          td(class="align-middle")
+            img(class="img-fluid" src= game.image alt= game.name)         
+      else 
+        td
+          h3 No hay juegos

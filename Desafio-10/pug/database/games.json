@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Serious Sam HD: The Second Encounter",
+    "price": 180,
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/41000/header.jpg?t=1601674786"
+  },
+  {
+    "id": 2,
+    "name": "Dishonored",
+    "price": 170,
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/205100/header.jpg?t=1598321484"
+  },
+  {
+    "id": 3,
+    "name": "God of War",
+    "price": 4200,
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/1593500/header.jpg?t=1642526157"
+  },
+  {
+    "name": "Try Or Not",
+    "price": "300",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/1144200/header.jpg?t=1639785519",
+    "id": 4
+  }
+]

@@ -1,0 +1,9 @@
+{{#each games}}
+    <tr>
+        <td>{{this.name}}</td>
+        <td>${{this.price}}</td>
+        <td class="align-middle">
+            <img class="img-fluid" src={{this.image}} alt={{this.name}}/>
+        </td>
+    </tr>
+{{/each}}
