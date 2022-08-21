@@ -1,0 +1,28 @@
+{{#if games.length}}
+<div class="table-responsive">
+    <table class="table table-dark">
+        <tr>
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Foto</th>
+            <th>Acciones</th>
+        </tr>
+        {{#each games}}
+        <tr>
+            <td>{{this.name}}</td>
+            <td>${{this.price}}</td>
+            <td class="align-middle">
+                <img class="img-fluid" src={{this.image}} alt={{this.name}}/>
+            </td>
+             <td>
+                {{!-- Boton de eliminar --}}
+                <button class="btn btn-danger" onclick="deleteGame({{this.id}})">
+                    Delete
+                </button>
+            </td>
+        </tr>
+
+        {{/each}}
+    </table>
+</div>
+{{/if}}
