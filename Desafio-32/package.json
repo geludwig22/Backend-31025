@@ -1,0 +1,29 @@
+{
+  "name": "32-profiling",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "start:cluster": "MODO=cluster node ./src/server.js",
+    "profiling": "node --prof ./src/server.js",
+    "test:artillery": "artillery quick --count=100 -n 40 http://localhost:3030/file/append-bloq?txt=HolaBloq > result_bloq.txt",
+    "test:artillery-cluster": "artillery quick --count=100 -n 40 http://localhost:3030/prime?max=100000 > result_cluster.txt",
+    "curl:bloq": "curl h",
+    "test:artillery-nobloq": "artillery quick --count=100 -n 40 http://localhost:3030/file/append?txt=Hola > result_nobloq.txt",
+    "test": "node ./tests/file.spec.js",
+    "0x": "0x ./src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "0x": "^5.2.1",
+    "artillery": "^2.0.0-14",
+    "autocannon": "^7.8.1",
+    "express": "^4.18.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
